@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(232,129,127);
+    font-family: 'Merriweather', serif;
+    color:rgb(57, 57, 57);
+  }
+
+  h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300;
+    margin: 10px 0;
+  }
+  
+  h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 50px 0 10px 0;
+  }
+
+p {
+    margin: 0px;
+    font-size: 20px;
+}
+
+a{
+   color: rgb(141,82,115);
+   font-size: 20px;
+   text-decoration: none;
+   font-weight: 100;
+}
+
+.dark a {
+    color: rgb(255, 255, 255);
+}
+
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(39, 38, 38);
+    position: relative;
+    
+}
+
+.flicker{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color:rgb(255, 255, 255);
+    position:absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+    box-shadow: 
+    inset 4px 4px 4px rgb(255, 255, 255),
+    inset -4px -4px 4px rgb(195 193 198 / 90%);
+   
+}
+
+.dark {
+    background-color: rgb(90,51,110);
+    transition: 0.3s;
+}
+
+.moon {
+   width: 20px; 
+   height: 20px;
+   border-radius: 10px;
+   box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+   position:absolute;
+   top:5px;
+   left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+ }
+
+.dark > * {
+    color: rgb(255, 255, 255);
+}
+
+
+  .main {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .main-text {
+    padding: 30px;
+    margin-bottom: 100px;
+  }
+
+  .square {
+    width: 48%;
+    margin: 1%;
+    height: 600px;
+    background-color: rgb(195,114,124);
+    text-align: center;
+  }
+
+.dark .square {
+    background-color:rgb(141,82,115);
+}
+
+
+#blackjack{
+  background-image: url(images/project3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px 200px; 
+ 
+}
+#word{
+  background-image: url(images/project4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px 200px; 
+  
+}
+#rps{
+  background-image: url(images/RPS.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px 200px; 
+  
+}
+#passenger{
+  background-image: url(images/project2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px 200px; 
+  
+}
+
+
+.sub-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.hero-image {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  display: block;
+  margin-bottom: 100px;
+}
+
+.cube {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  transform: rotate(-25deg) skew(25deg);
+}
+.cube:before {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 100%;
+  transform: skewY(-45deg);
+  left: -20px;
+  bottom: -10px;
+}
+.cube:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 21px;
+  transform: skewX(-45deg);
+  left: -10px;
+  bottom: -20px;
+}
+#html {
+left: 100px;
+bottom: 80px;
+background-image: url(images/html-square.png);
+background-size: cover;
+background-color: rgb(49,31,98);
+box-shadow: -60px 60px 20px rgb(50 50 50/ 15%)
+}
+
+#html:before {
+  background-color: rgb(90,51,110);
+}
+
+#html:after {
+  background-color: rgb(141,82,115);
+}
+#css {
+  left: 250px;
+  bottom: 240px;
+  background-image: url("images/css-square.png");
+  background-size: cover;
+  background-color: rgb(141,82,115);
+  box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
+}
+
+#css:before {
+  background-color: rgb(90,51,110);
+}
+
+#css:after {
+  background-color: rgb(49,31,98);
+}
+
+#javascript {
+  left: 450px;
+  bottom: 200px;
+  background-image: url("images/javascript-square.png");
+  background-size: cover;
+  background-color: rgb(90,51,110);
+  box-shadow: -40px 40px 20px rgb(50 50 50/ 15%);
+}
+
+#javascript:before {
+  background-color: rgb(141,82,115);
+}
+
+#javascript:after {
+  background-color: rgb(195,114,124);
+}
+
+#java {
+  left: 350px;
+  bottom: 40px;
+  background-image: url("images/icons8-java-150.png");
+  background-size: cover;
+  background-color: rgb(90,51,110);
+  box-shadow: -80px 80px 20px rgb(50 50 50/ 15%);
+}
+
+#java:before {
+  background-color: rgb(141,82,115);
+}
+
+#java:after {
+  background-color: rgb(195,114,124);
+}
+
+  .social {
+    margin: 20px;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+
+}
+
+
+@media only screen and (min-widith:970px) {
+  .main-text {
+    width: 50%;
+  }
+
+  .square {
+    width: 48%;
+    margin: 1%;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .hero-image {
+    display: none;
+  }
+}
